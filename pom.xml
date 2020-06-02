@@ -529,6 +529,24 @@
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>SQLServer</id>
+            <properties>
+                <db.script>sqlserver</db.script>
+                <jpa.database>SQLSERVER</jpa.database>
+                <jdbc.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc.driverClassName>
+                <jdbc.url>${sqlserver.jdbc.url}</jdbc.url>
+                <jdbc.username>sqluser</jdbc.username>
+                <jdbc.password>password</jdbc.password>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>com.microsoft.sqlserver</groupId>
+                    <artifactId>mssql-jdbc</artifactId>
+                    <version>8.2.2.jre8</version>
+                </dependency>
+            </dependencies>
+        </profile>
    </profiles>
 
     <repositories>
