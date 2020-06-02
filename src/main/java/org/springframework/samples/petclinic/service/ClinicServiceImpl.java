@@ -72,6 +72,12 @@ public class ClinicServiceImpl implements ClinicService {
     }
 
     @Override
+    @Transactional(readOnly = true)
+    public Collection<Owner> findOwnerByName(String name) {
+        return ownerRepository.findByName(name);
+    }
+
+    @Override
     @Transactional
     public void saveOwner(Owner owner) {
         ownerRepository.save(owner);

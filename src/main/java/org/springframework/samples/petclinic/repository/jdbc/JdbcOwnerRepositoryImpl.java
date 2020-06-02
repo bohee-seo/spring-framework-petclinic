@@ -16,6 +16,7 @@
 package org.springframework.samples.petclinic.repository.jdbc;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,6 +84,10 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
         );
         loadOwnersPetsAndVisits(owners);
         return owners;
+    }
+
+    public Collection<Owner> findByName(String name) {
+        return Collections.emptyList();
     }
 
     /**

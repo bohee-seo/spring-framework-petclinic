@@ -47,6 +47,8 @@ public interface ClinicService {
 
     Collection<Owner> findOwnerByLastName(String lastName);
 
+    Collection<Owner> findOwnerByName(String name);
+
 	Collection<Visit> findVisitsByPetId(int petId);
 
 }

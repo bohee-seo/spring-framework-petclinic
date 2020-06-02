@@ -85,7 +85,8 @@ public class OwnerController {
         }
 
         // find owners by last name
-        Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
+        //Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
+        Collection<Owner> results = this.clinicService.findOwnerByName(owner.getLastName());
         if (results.isEmpty()) {
             // no owners found
             result.rejectValue("lastName", "notFound", "not found");

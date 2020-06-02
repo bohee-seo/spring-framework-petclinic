@@ -41,6 +41,8 @@ public interface OwnerRepository {
      */
     Collection<Owner> findByLastName(String lastName);
 
+    Collection<Owner> findByName(String lastName);
+
     /**
      * Retrieve an <code>Owner</code> from the data store by id.
      *
