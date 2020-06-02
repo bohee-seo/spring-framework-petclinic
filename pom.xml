@@ -533,7 +533,7 @@
             <id>SQLServer</id>
             <properties>
                 <db.script>sqlserver</db.script>
-                <jpa.database>SQLSERVER</jpa.database>
+                <jpa.database>SQL_SERVER</jpa.database>
                 <jdbc.driverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc.driverClassName>
                 <jdbc.url>${sqlserver.jdbc.url}</jdbc.url>
                 <jdbc.username>sqluser</jdbc.username>
