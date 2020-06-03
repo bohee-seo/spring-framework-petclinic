@@ -10,6 +10,6 @@ public class ApiRestController {
 
     @GetMapping(value = "/version", produces = {"application/JSON"})
     public String getApiVersion(){
-        return "{\"version\": \"1.0.1\"}";
+        return "{\"version\": \"1.0.0\"}";
     }
 }
