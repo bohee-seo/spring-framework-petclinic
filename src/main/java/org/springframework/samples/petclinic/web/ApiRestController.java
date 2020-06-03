@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class ApiRestController {
 
-    @GetMapping("/version")
+    @GetMapping(value = "/version", produces = "application/json")
     public String getApiVersion(){
-        return "1.0.0";
+        return "{version: '1.0.0'}";
     }
 }
